@@ -7,8 +7,8 @@ import Column from '../Column/Column.js';
 class List extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
-    image: PropTypes.text,
     children: PropTypes.node,
+    image: PropTypes.string,
   }
   static defaultProps = {
     children: <p>Thing we need to do TODAY!!!!</p>,
