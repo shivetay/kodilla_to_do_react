@@ -15,16 +15,16 @@ class App extends React.Component {
     lists: PropTypes.array,
   }
   static defaultProps = {
-  title: listData.description,
+  title: listData.title,
   }
   addList(title){
     this.setState(state => (
       {
         lists: [
-          ...state.listData,
+          ...state.lists,
           {
-            key: state.lists.length ? state.lists[state.lists.length-1].key+1 : 0,
-            title
+            key: state.lists.length ,
+            title, 
           }
         ]
       }
