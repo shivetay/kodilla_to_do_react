@@ -24,7 +24,11 @@ class App extends React.Component {
           ...state.lists,
           {
             key: state.lists.length ,
-            title, 
+            title,
+            // title: listData.title,
+            description: listData.description,
+            image: listData.image, 
+            // columns: listData.columns,
           }
         ]
       }
