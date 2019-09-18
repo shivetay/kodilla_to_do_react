@@ -26,9 +26,9 @@ class Column extends React.Component {
           ...state.cards,
           {
             key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
-            title
-          }
-        ]
+            title,
+          },
+        ],
       }
     ));
   }
@@ -46,7 +46,7 @@ class Column extends React.Component {
           <Creator text={settings.columnCreatorText} action={title => this.addCard(title)}/>
         </div>
       </section>
-    )
+    );
   }
 }
 

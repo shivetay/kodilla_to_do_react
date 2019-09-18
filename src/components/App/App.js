@@ -15,7 +15,7 @@ class App extends React.Component {
     lists: PropTypes.array,
   }
   static defaultProps = {
-  title: listData.title,
+    title: listData.title,
   }
   addList(title){
     this.setState(state => (
@@ -28,9 +28,9 @@ class App extends React.Component {
             // title: listData.title,
             description: listData.description,
             image: listData.image, 
-            // columns: listData.columns,
-          }
-        ]
+            columns: [],
+          },
+        ],
       }
     ));
   }
@@ -39,14 +39,14 @@ class App extends React.Component {
       <main className={styles.component}>
         <h1 className={styles.title}>{pageContents.title}</h1>
         <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
-          {this.state.lists.map(({key, ...listProps}) => (
-            <List key={key} {...listProps} />
-          ))}
+        {this.state.lists.map(({key, ...listProps}) => (
+          <List key={key} {...listProps} />
+        ))}
         <div className={styles.creator}>
           <Creator text={settings.columnCreatorText} action={title => this.addList(title)}/>
         </div>
       </main>
-    )
+    );
   }
 }
 
