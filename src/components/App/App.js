@@ -10,7 +10,7 @@ class App extends React.Component {
   state = {
     lists: this.props.lists || [],
   }
-  static protoTypes = {
+  static propTypes = {
     title: PropTypes.node,
     lists: PropTypes.array,
   }
