@@ -16,8 +16,8 @@ class Search extends React.Component {
   }
 
   static defaultProps = {
-    text: settings.search.defaultText,
-    icon: settings.search.icon,
+    text: settings.creator.defaultText,
+    icon: settings.creator.icon,
   }
 
   state = {
