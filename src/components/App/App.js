@@ -13,10 +13,7 @@ class App extends React.Component {
     subtitle: PropTypes.node,
     lists: PropTypes.array,
   }
-  // static defaultProps = {
-  //   title: listData.title,
-  // }
-  
+ 
   render() {
     const {title, subtitle, lists} = this.props;
     return (
