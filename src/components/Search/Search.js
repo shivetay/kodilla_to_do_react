@@ -34,10 +34,6 @@ class Search extends React.Component {
     this.props.changeSearchString(this.state.value);
   }
 
-  componentDidUpdate(newProps){
-    this.setState({value: newProps.searchString});
-  }
-
   render() {
     const {text, icon, countVisible, countAll} = this.props;
     const {value} = this.state;
