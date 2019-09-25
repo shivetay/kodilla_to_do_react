@@ -4,6 +4,7 @@ import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';
+import Container from '../Container/Container.js';
 
 class Search extends React.Component {
   static propTypes = {
@@ -38,20 +39,22 @@ class Search extends React.Component {
     const {text, icon, countVisible, countAll} = this.props;
     const {value} = this.state;
     return (
-      <div className={styles.component}>
-        <input
-          type='text'
-          placeholder={text}
-          value={value}
-          onChange={event => this.handleChange(event)}
-        />
-        <div className={styles.buttons}>
-          <Button onClick={() => this.handleOK()}><Icon name={icon} /></Button>
+      <Container>
+        <div className={styles.component}>
+          <input
+            type='text'
+            placeholder={text}
+            value={value}
+            onChange={event => this.handleChange(event)}
+          />
+          <div className={styles.buttons}>
+            <Button onClick={() => this.handleOK()}><Icon name={icon} /></Button>
+          </div>
+          <div>
+            { countVisible == countAll ? '' : `${countVisible} / ${countAll}` }
+          </div>
         </div>
-        <div>
-          { countVisible == countAll ? '' : `${countVisible} / ${countAll}` }
-        </div>
-      </div>
+      </Container>
     );
   }
 }
