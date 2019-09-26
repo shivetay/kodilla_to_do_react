@@ -44,13 +44,12 @@ class Home extends React.Component {
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
-        
+        <Search />
         <DragDropContext onDragEnd={moveCardHandler}>
           {lists.map(listData => (
             <List key={listData.id} {...listData} />
           ))}
-        </DragDropContext> 
-        <Search />
+        </DragDropContext>
       </main>
     );
   }
