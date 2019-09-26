@@ -1,6 +1,7 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  navIcon: 'paw',
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
@@ -12,6 +13,18 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+};
+
+export const infoData = {
+  image: 'https://images.unsplash.com/photo-1552510373-7a6449943736?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1009&q=80',
+  title: 'Info',
+  content: 'Marty, that was very interesting music. Uh, you mean nobodys asked you?',
+};
+
+export const faqData = {
+  image: 'https://images.unsplash.com/photo-1550353175-a3611868086b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+  title: 'FAQ',
+  content: 'Right. Alright, take it up, go. Doc. Um, well it is a delorean, right? Save the clock tower. Aw yeah, everything is great.',
 };
 
 export const pageContents = {
