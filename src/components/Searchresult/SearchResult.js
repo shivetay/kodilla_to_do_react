@@ -16,11 +16,9 @@ class SearchResults extends React.Component {
       <section>
         <div className={styles.component}>
           {cards.map(cardData => {
-            return (
-              <Link className={styles.links} to={`/list/${cardData.listId}`}>
-                <Card key={cardData.id} {...cardData} />
-              </Link>
-            );
+            <Link className={styles.links} to={`/list/${cardData.listId}`}>
+              <Card key={cardData.id} {...cardData} />
+            </Link>;
           })}
         </div>
       </section>
