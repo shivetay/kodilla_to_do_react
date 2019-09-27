@@ -9,9 +9,10 @@ const mapStateToProps = (state, props) => {
   const listParams = filteredLists[0] || {};
   return {
     ...listParams,
-    columns: getColumnsForList(state, props.match.params.id),
+    columns: getColumnsForList(state, id),
   };
 };
+
 
 const mapDispatchToProps = (dispatch, props) => ({
   addColumn: title => dispatch(createAction_addColumn({
