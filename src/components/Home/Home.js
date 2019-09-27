@@ -14,7 +14,7 @@ class Home extends React.Component {
   }
  
   render() {
-    const {title, subtitle, lists, moveCard} = this.props;
+    const {title, subtitle, lists} = this.props;
     const moveCardHandler = result => {
       if(
         result.destination
@@ -25,7 +25,7 @@ class Home extends React.Component {
           result.destination.droppableId != result.source.droppableId
         )
       ){
-        moveCard({
+        console.log({
           id: result.draggableId,
           dest: {
             index: result.destination.index,
