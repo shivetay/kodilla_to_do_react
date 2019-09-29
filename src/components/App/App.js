@@ -7,7 +7,7 @@ import styles from './App.scss';
 import {BrowserRouter, Route} from 'react-router-dom';
 import {spring, AnimatedSwitch} from 'react-router-transition';
 import List from '../List/ListContainer';
-import Search from '../Search/Search';
+import SearchResultContainer from '../Searchresult/SearchResultContainer';
 
 const App = () => (
   <BrowserRouter>
@@ -23,7 +23,7 @@ const App = () => (
         <Route exact path="/info" component={Info} />
         <Route exact path="/faq" component={FAQ} />
         <Route exact path="/list/:id" component={List} />
-        <Route exact path="/search/:searchString" component={Search} />
+        <Route exact path="/search/:searchString" component={SearchResultContainer} />
 
       </AnimatedSwitch>
     </MainLayout>

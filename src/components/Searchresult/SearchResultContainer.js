@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
-import SearchResults from './SearchResults';
-import {getCardsForSearch} from '../../redux/cardsRedux.js';
+import SearchResults from './SearchResult';
+import {getCardsForSearch} from '../../redux/cardRedux.js';
 import {createAction_changeSearchString} from '../../redux/searchStringRedux.js';
 
 

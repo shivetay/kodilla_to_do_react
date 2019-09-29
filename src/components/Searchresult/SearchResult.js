@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
-import styles from './SearchResults.scss';
+import Container from '../Container/Container.js';
+import styles from './SearchResult.scss';
 import {Link} from 'react-router-dom';
+
+
 
 class SearchResults extends React.Component {
   static propTypes = {
@@ -14,13 +17,15 @@ class SearchResults extends React.Component {
     const {cards} = this.props;
     return (
       <section>
-        <div className={styles.component}>
-          {cards.map(cardData => {
-            <Link className={styles.links} to={`/list/${cardData.listId}`}>
-              <Card key={cardData.id} {...cardData} />
-            </Link>;
-          })}
-        </div>
+        <Container>
+          <div className={styles.component}>
+            {cards.map(cardData => {
+              <Link className={styles.links} to={`/list/${cardData.listId}`}>
+                <Card key={cardData.id} {...cardData} />
+              </Link>;
+            })}
+          </div>
+        </Container>
       </section>
     );
   }

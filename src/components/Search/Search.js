@@ -15,7 +15,7 @@ class Search extends React.Component {
     changeSearchString: PropTypes.func,
     countVisible: PropTypes.number,
     countAll: PropTypes.number,
-    history: PropTypes.object,
+    history: PropTypes.any,
   }
 
   static defaultProps = {

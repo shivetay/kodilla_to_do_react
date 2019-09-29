@@ -19,8 +19,8 @@ class Home extends React.Component {
         <main className={styles.component}>
           <h1 className={styles.title}>{title}</h1>
           <h2 className={styles.subtitle}>{subtitle}</h2>
-          {lists.map(lists => (
-            <ListLink key={lists.id} {...lists} />
+          {lists.map(listData => (
+            <ListLink key={listData.id} {...listData} />
           ))}
         </main>
       </Container>
