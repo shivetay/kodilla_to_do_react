@@ -1,5 +1,5 @@
 export const settings = {
-  navIcon: 'heart',
+  navIcon: 'paw',
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
   creator: {
@@ -90,19 +90,19 @@ const lists = [
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    image: 'https://cdn.pixabay.com/photo/2018/03/31/09/55/color-3277733_960_720.jpg',
   },
   {
     id: 'list-2',
-    title: 'Movies I want to watch!',
-    description: 'A list of recommended movies',
-    image: 'https://i.postimg.cc/wTX35LKr/movie-theater-interior-a-l.jpg',
+    title: 'Things to do <sup>soon!</sup>',
+    description: 'Important work stuff',
+    image: 'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80',
   },
   {
     id: 'list-3',
-    title: 'Books I want to read!',
-    description: 'List of books on programming',
-    image: 'https://i.postimg.cc/rpFdwmPP/top-7-books-that-changed-the-world.jpg',
+    title: 'Things to do <sup>soon!</sup>',
+    description: 'Family time things',
+    image: 'https://images.unsplash.com/photo-1532377416656-e35d0e574765?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80',
   },
 ];
 
