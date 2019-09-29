@@ -21,15 +21,15 @@ export const pageContents = {
 };
 
 export const infoSettings = {
-  title: 'About Me',
-  image: 'https://i.postimg.cc/1t6p0b5h/three-toed-sloth.jpg',
-  content: 'Hi! I am learning React and this is my first app. Have a look around!',
+  image: 'https://images.unsplash.com/photo-1552510373-7a6449943736?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1009&q=80',
+  title: 'Info',
+  content: 'Marty, that was very interesting music. Uh, you mean nobodys asked you?',
 };
 
 export const faqSettings = {
-  title: 'Frequently Asked Questions',
-  image: 'https://i.postimg.cc/1tL9pY7F/Manuel-Antonio-National-Park-featimg-sloth-820x312.jpg',
-  content: 'To be or not to be?',
+  image: 'https://images.unsplash.com/photo-1550353175-a3611868086b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+  title: 'FAQ',
+  content: 'Right. Alright, take it up, go. Doc. Um, well it is a delorean, right? Save the clock tower. Aw yeah, everything is great.',
 };
 
 export const listData = {
