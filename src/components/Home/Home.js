@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.scss';
 import PropTypes from 'prop-types';
-import ListLink from '../ListLinks/ListLink.js';
+import ListLink from '../ListLink/ListLink.js';
 import Container from '../Container/Container.js';
 
 class Home extends React.Component {
@@ -14,6 +14,7 @@ class Home extends React.Component {
 
   render() {
     const {title, subtitle, lists} = this.props;
+    console.log(this.props);
     return (
       <Container>
         <main className={styles.component}>

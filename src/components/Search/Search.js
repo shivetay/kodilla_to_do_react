@@ -34,30 +34,31 @@ class Search extends React.Component {
   }
 
   handleOK(){
-    // this.props.changeSearchString(this.state.value);
     this.props.history.push(`/search/${this.state.value}`);
+  }
+
+  componentWillReceiveProps(newProps){
+    this.setState({value: newProps.searchString});
   }
 
   render() {
     const {text, icon, countVisible, countAll} = this.props;
     const {value} = this.state;
     return (
-      <Container>
-        <div className={styles.component}>
+      <div className={styles.component}>
+        <Container>
           <input
             type='text'
             placeholder={text}
             value={value}
             onChange={event => this.handleChange(event)}
           />
-          <div className={styles.buttons}>
-            <Button onClick={() => this.handleOK()}><Icon name={icon} /></Button>
-          </div>
+          <Button className={styles.buttons} onClick={() => this.handleOK()}><Icon name={icon} /></Button>
           <div>
             { countVisible == countAll ? '' : `${countVisible} / ${countAll}` }
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     );
   }
 }

@@ -1,7 +1,6 @@
 import {connect} from 'react-redux';
 import Column from './Column';
-import {getCardsForColumn, createAction_addCard} from '../../redux/cardRedux';
-
+import { getCardsForColumn, createAction_addCard  } from '../../redux/cardsRedux.js';
 
 
 const mapStateToProps = (state, props) => ({
@@ -14,4 +13,5 @@ const mapDispatchToProps = (dispatch, props) => ({
     title,
   })),
 });
+
 export default connect(mapStateToProps, mapDispatchToProps)(Column);

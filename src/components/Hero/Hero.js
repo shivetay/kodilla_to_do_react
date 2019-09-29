@@ -1,20 +1,18 @@
 import React from 'react';
+import styles from './Hero.scss';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
-import styles from './Hero.scss';
-
-
 
 const Hero = props => (
   <header className={styles.component}>
     <h2 className={styles.title}>{ReactHtmlParser(props.titleText)}</h2>
-    <img className={styles.image} src={props.heroImage} />
+    <img src={props.imageSource} className={styles.image}  />
   </header>
 );
 
 Hero.propTypes = {
-  titleText: PropTypes.node.isRequired,
-  heroImage: PropTypes.string,
+  titleText: PropTypes.node,
+  imageSource: PropTypes.string,
 };
 
 export default Hero;
