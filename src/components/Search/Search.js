@@ -37,10 +37,6 @@ class Search extends React.Component {
     this.props.history.push(`/search/${this.state.value}`);
   }
 
-  componentWillReceiveProps(newProps){
-    this.setState({value: newProps.searchString});
-  }
-
   render() {
     const {text, icon, countVisible, countAll} = this.props;
     const {value} = this.state;
